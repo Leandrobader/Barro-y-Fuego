@@ -1,0 +1,161 @@
+.navcolor {
+  background-color: #473144;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.logo a img {
+  height: 5em;
+  width: 5em;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: #47314494;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.sub-btn {
+  background-color: #f0d3f7;
+}
+
+.sub-btn:hover {
+  background-image: linear-gradient(to right, #473144, #f0d3f7);
+}
+
+.color-btn {
+  background-color: #473144;
+  color: white;
+}
+
+.color-btn:hover {
+  background-color: #f0d3f7;
+  color: black;
+}
+
+.pagination > li.active > a {
+  background-color: #473144;
+  color: white;
+}
+.pagination > li > a {
+  color: black;
+}
+
+.a-list {
+  text-decoration: none;
+  color: black;
+}
+
+@media all and (max-width: 768px) {
+  .pub-none {
+    display: none;
+  }
+}
+
+.facebook:hover {
+  background: #41579a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.twitter:hover {
+  background: #00acee;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.googleBtn:hover {
+  background: #db4a39;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    to top right,
+    #fcde30,
+    #e9712a,
+    #d2313b,
+    #ae4198,
+    #7540a1,
+    #5443a8
+  );
+  color: #fff;
+  border-radius: 5px;
+}
+
+.paddingMain {
+  padding-top: 8.125rem;
+}
+
+.ModalLogIn {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+}
+
+.userComentary{
+  color: #473144;
+}
+
+.masymenos-btn {
+  padding-inline: 1.5em;
+}
+
+.btnComentarioMas:hover{
+  color: green;
+  background-color: #f0d3f7;
+}
+
+.btnComentarioMenos:hover{
+  color: red;
+  background-color: #f0d3f7;
+}
+
+.btnResponder:hover{
+  background-color: #473144;
+  color: #f0d3f7;
+}
+
+.img-circular {
+  border-radius: 50%;
+  border: 3px solid black;
+  width: 52%;    
+}
+
+@media (max-width: 434px) {
+  .dim-photo {
+    height: 300px;
+    width: 100px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1198px) {
+  .dim-photo {
+    height: 700px;
+    width: 100%;
+    object-fit: fill ;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .tnone {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .card-text:hover .tnone {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cardsm {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

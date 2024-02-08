@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=">Grupo2 80i" />
+    <meta name="description" content="Proyecto bootstrap Ceramica" />
+    <meta name="keywords" content="html, css3, bootstrap, pages, etc" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/786c760010.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Barro y Fuego</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navcolor navbar-dark navbar navbar-expand-lg text-primary fixed-top"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="navbar-brand fs-4" href="Index.html"
+              ><img
+                src="img/Barro_y_Fuego_Logo_-_Original_-_5000x5000-removebg-preview.png"
+                alt="Barro y Fuego"
+            /></a>
+          </div>
+          <!-- Toggler Btn-->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-botton">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Barro y Fuego
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- SideBar Body -->
+            <div
+              class="offcanvas-body d-flex flex-column align-items-center flex-lg-row p-4 p-lg-0"
+            >
+              <ul
+                class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3"
+              >
+                <li class="nav-item mx-2">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="Index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="pages/contenido1.html"
+                    >Contenido</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="pages/sobreNosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+              </ul>
+              <!--Login / Sign up  -->
+              <div
+                class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+              >
+                <a href="pages/LogIn.html" class="text-white">Iniciar Sesión</a>
+                <button
+                  type="button"
+                  class="sub-btn text-dark text-decoration-none px-3 py-2 rounded-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscribeModal"
+                >
+                  Suscripción
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="paddingMain">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="suscribeModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog">
+          <div
+            class="ModalLogIn modal-content text-light border-3 border-white"
+          >
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscripción
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-4">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer01" class="form-label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer01"
+                    placeholder="Lionel"
+                    minlength="3"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer02" class="form-label"
+                    >Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer02"
+                    placeholder="Messi"
+                    minlength="3"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    required
+                    placeholder="example@email.com"
+                    minlength="8"
+                    maxlength="25"
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer03" class="form-label"
+                    >Ciudad</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer03"
+                    placeholder="San Miguel de Tucuman"
+                    aria-describedby="validationServer03Feedback"
+                    minlength="4"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer04" class="form-label"
+                    >Provincia</label
+                  >
+                  <select
+                    class="form-select"
+                    id="validationServer04"
+                    aria-describedby="validationServer04Feedback"
+                    required
+                  >
+                    <option selected disabled value="">Seleccione</option>
+                    <option>Buenos Aires</option>
+                    <option>Capital Federal</option>
+                    <option>Catamarca</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Cordoba</option>
+                    <option>Corrientes</option>
+                    <option>Entre Ríos</option>
+                    <option>Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquén</option>
+                    <option>Rio Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fe</option>
+                    <option>Santiago del Estero</option>
+                    <option>Tierra del Fuego</option>
+                    <option>Tucumán</option>
+                  </select>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer05" class="form-label"
+                    >Código Postal</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationServer05"
+                    aria-describedby="validationServer05Feedback"
+                    placeholder="4000"
+                    minlength="4"
+                    maxlength="6"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer06" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="validationServer06"
+                    placeholder="*********"
+                    aria-describedby="validationServer06Feedback"
+                    minlength="8"
+                    maxlength="15"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer07" class="form-label"
+                    >Repetir Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="validationServer07"
+                    placeholder="*********"
+                    aria-describedby="validationServer07Feedback"
+                    minlength="8"
+                    maxlength="15"
+                    required
+                  />
+                </div>
+                <div>
+                  <p>Mínimo 8 caracteres</p>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck3"
+                      aria-describedby="invalidCheck3Feedback"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck3">
+                      Estoy de acuerdo con los términos y condiciones.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <button
+                    type="button"
+                    class="btn btn-danger mx-1"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="submit"
+                    class="color-btn btn btn-primary mx-1 border"
+                  >
+                    Suscribirme
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Suscripción Modal -->
+      <!--Inicio Slider-->
+      <div
+        id="carouselExampleInterval"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img
+              src="img/slider-1.jpg"
+              class="d-block w-100 dim-photo"
+              alt="Experiencia Raku"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img
+              src="img/slider-2.jpg"
+              class="d-block w-100 dim-photo"
+              alt="Raku significado"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/slider-3.jpg"
+              class="d-block w-100 dim-photo"
+              alt="Ceramico Raku"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="container">
+        <article class="row">
+          <div class="col-sm-12 col-md-6 mt-4">
+            <h2 class="text-center">Lo más visto</h2>
+            <div class="col-sm-12 my-2 shadow">
+              <div class="card border border-white my-4">
+                <img src="./img/CardRaku.png" class="card-img-top" alt="raku" />
+                <div class="card-body">
+                  <h5 class="card-title">Rakú</h5>
+                  <p class="card-text">Una técnica milenaria</p>
+                  <a href="pages/raku.html" class="btn color-btn">Ver mas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 my-2 shadow">
+              <div class="card border border-white my-4">
+                <img
+                  src="./img/CardRakuObvara.png"
+                  class="card-img-top"
+                  alt="rakuobvara"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rakú Obvara</h5>
+                  <p class="card-text">Origen y receta</p>
+                  <a href="pages/rakuobvara.html" class="btn color-btn"
+                    >Ver mas</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 my-2 shadow">
+              <div class="card border border-white my-4">
+                <img
+                  src="./img/CardEsmalteRaku.png"
+                  class="card-img-top"
+                  alt="esmaltes"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Esmaltes para Rakú</h5>
+                  <p class="card-text">
+                    Hacé tus propios esmaltes para fuego directo
+                  </p>
+                  <a href="pages/esmaltesRaku.html" class="btn color-btn"
+                    >Ver mas</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="my-4 example">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination d-flex justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#">Anterior</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="pages/contenido1.html">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="pages/contenido2.html">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="pages/error404.html">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="pages/contenido2.html"
+                      >Siguiente</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 mt-3">
+            <div class="col-sm-12 mt-3">
+              <form class="row">
+                <div class="text-center">
+                  <label for="busqueda">
+                    <h3>¿Que estas buscando?</h3>
+                  </label>
+                </div>
+                <div class="input-group flex-nowrap">
+                  <input
+                    type="search"
+                    id="busqueda"
+                    class="form-control ds-input"
+                    placeholder="Buscá por temas"
+                    aria-label="busqueda"
+                    aria-describedby="búsqueda"
+                    required
+                    minlength="3"
+                    maxlength="35"
+                  />
+                  <span class="input-group-text" id="búsqueda">
+                    <button class="btn color-btn" type="submit">
+                      <i class="fas fa-search fa-2x text-primary"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-12 my-5">
+              <h3>Lo más buscado</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="pages/esmaltesRaku.html" class="a-list"
+                    >Esmaltes para Rakú</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a href="pages/hornoCeramico.html" class="a-list"
+                    >Horno a leña para cerámica</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a href="pages/pastaDeArcilla.html" class="a-list"
+                    >Pastas Cerámicas</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a href="pages/raku.html" class="a-list">Raku</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="pages/rakuobvara.html" class="a-list">Raku Obvara</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="pages/placasHorno.html" class="a-list"
+                    >Refractarios para horno</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 shadow-lg">
+              <img
+                src="./img/publicidad 1.jpg"
+                class="w-100 h-100 my-5 pub-none"
+                alt="Publicidad taller de ceramica"
+              />
+              <img
+                src="./img/gifpublicidad1.gif"
+                class="w-100 h-100 my-5 pub-none"
+                alt="Publicidad taller"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="navcolor container-fluid">
+      <article class="row">
+        <div
+          class="logo col-sm-12 col-md-4 col-lg-4 py-4 d-flex justify-content-center fs-4"
+        >
+          <a href="index.html"
+            ><img
+              src="img/Barro_y_Fuego_Logo_-_Original_-_5000x5000-removebg-preview.png"
+              alt="icono del logotipo de blog del firu"
+          /></a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4 d-flex text-center">
+          <ul class="navbar-nav justify-content-center fs-6 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="Index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white" href="pages/contenido1.html"
+                >Contenido</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white" href="pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white" href="pages/sobreNosotros.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4 text-center text-light">
+          <h5>Seguinos en nuestras redes</h5>
+          <div class="d-flex justify-content-center">
+            <a
+              href="pages/error404.html"
+              class="text-white facebook"
+              target="blank"
+              ><i
+                class="fab fa-facebook-square fa-2x px-1 align-content-center"
+              ></i
+            ></a>
+            <a
+              href="pages/error404.html"
+              class="text-white twitter"
+              target="blank"
+              ><i class="fab fa-twitter-square fa-2x px-1"></i
+            ></a>
+            <a
+              href="pages/error404.html"
+              class="text-white instagram"
+              target="blank"
+              ><i class="fab fa-instagram fa-2x px-1"></i
+            ></a>
+          </div>
+          <span class="fs-6">&copy;Todos los Derechos Reservados</span>
+        </div>
+      </article>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

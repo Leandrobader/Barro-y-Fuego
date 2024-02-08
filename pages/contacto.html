@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=">Grupo2 80i" />
+    <meta name="description" content="Proyecto bootstrap Ceramica" />
+    <meta name="keywords" content="html, css3, bootstrap, pages, etc" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/786c760010.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Barro y Fuego</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navcolor navbar-dark navbar navbar-expand-lg text-primary fixed-top"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="navbar-brand fs-4" href="../Index.html"
+              ><img
+                src="../img/Barro_y_Fuego_Logo_-_Original_-_5000x5000-removebg-preview.png"
+                alt="Barro y Fuego"
+            /></a>
+          </div>
+          <!-- Toggler Btn-->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-botton">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Barro y Fuego
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- SideBar Body -->
+            <div
+              class="offcanvas-body d-flex flex-column align-items-center flex-lg-row p-4 p-lg-0"
+            >
+              <ul
+                class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3"
+              >
+                <li class="nav-item mx-2">
+                  <a
+                    class="nav-link text-white"
+                    aria-current="page"
+                    href="../Index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="contenido1.html"
+                    >Contenido</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="sobreNosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+              </ul>
+              <!--Login / Sign up  -->
+              <div
+                class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+              >
+                <a href="LogIn.html" class="text-white">Iniciar Sesión</a>
+                <button
+                  type="button"
+                  class="sub-btn text-dark text-decoration-none px-3 py-2 rounded-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscribeModal"
+                >
+                  Suscripción
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="suscribeModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+        data-bs-theme="dark"
+      >
+        <div class="modal-dialog">
+          <div
+            class="ModalLogIn modal-content text-light border-3 border-white"
+          >
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscripción
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-4">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer01" class="form-label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer01"
+                    placeholder="Lionel"
+                    minlength="3"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer02" class="form-label"
+                    >Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer02"
+                    placeholder="Messi"
+                    minlength="3"
+                    maxlength="20"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    required
+                    placeholder="example@email.com"
+                    minlength="8"
+                    maxlength="25"
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer03" class="form-label"
+                    >Ciudad</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer03"
+                    placeholder="San Miguel de Tucuman"
+                    aria-describedby="validationServer03Feedback"
+                    minlength="4"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer04" class="form-label"
+                    >Provincia</label
+                  >
+                  <select
+                    class="form-select"
+                    id="validationServer04"
+                    aria-describedby="validationServer04Feedback"
+                    required
+                  >
+                    <option selected disabled value="">Seleccione</option>
+                    <option>Buenos Aires</option>
+                    <option>Capital Federal</option>
+                    <option>Catamarca</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Cordoba</option>
+                    <option>Corrientes</option>
+                    <option>Entre Ríos</option>
+                    <option>Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquén</option>
+                    <option>Rio Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fe</option>
+                    <option>Santiago del Estero</option>
+                    <option>Tierra del Fuego</option>
+                    <option>Tucumán</option>
+                  </select>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer05" class="form-label"
+                    >Código Postal</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationServer05"
+                    aria-describedby="validationServer05Feedback"
+                    placeholder="4000"
+                    minlength="4"
+                    maxlength="6"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer06" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="validationServer06"
+                    placeholder="*********"
+                    aria-describedby="validationServer06Feedback"
+                    minlength="8"
+                    maxlength="15"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <label for="validationServer07" class="form-label"
+                    >Repetí Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="validationServer07"
+                    placeholder="*********"
+                    aria-describedby="validationServer07Feedback"
+                    minlength="8"
+                    maxlength="15"
+                    required
+                  />
+                </div>
+                <div>
+                  <p>Mínimo 8 caracteres</p>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck3"
+                      aria-describedby="invalidCheck3Feedback"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck3">
+                      Estoy de acuerdo con los términos y condiciones.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                  <button
+                    type="button"
+                    class="btn btn-danger mx-1"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="submit"
+                    class="color-btn btn btn-primary mx-1 border"
+                  >
+                    Suscribirme
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Login Modal -->
+      <section class="my-5 py-5 container-fluid">
+        <h1 class="display-2 text-center pt-5">Contacto</h1>
+        <hr />
+        <article class="row px-4">
+          <div
+            class="col-sm-12 col-md-6 my-5 g-5 border border-1 shadow rounded-5"
+          >
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label pt-5 fs-5"
+                  >Nombre y Apellido</label
+                >
+                <input
+                  type="text"
+                  class="form-control shadow"
+                  id="name"
+                  placeholder="Ingrese su Nombre y Apellido"
+                  minlength="8"
+                  maxlength="25"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fs-5">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control shadow"
+                  placeholder="example@email.com"
+                  maxlength="24"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="consulta" class="form-label fs-5">Consulta</label>
+                <textarea
+                  name="comentarios"
+                  id="consulta"
+                  rows="5"
+                  class="form-control shadow"
+                  placeholder="Agregue su consulta aquí"
+                  required
+                  minlength="4"
+                  maxlength="250"
+                  style="resize: none"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button class="btn color-btn my-5" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex align-items-center px-4">
+            <span class="d-none d-md-block">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28480.4369198406!2d-65.23808156555384!3d-26.83821515823391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1698109976186!5m2!1ses-419!2sar"
+                width="600"
+                height="450"
+                style="border-radius: 5%"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </span>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="navcolor container-fluid">
+      <article class="row">
+        <div
+          class="logo col-sm-12 col-md-4 col-lg-4 py-4 d-flex justify-content-center fs-4"
+        >
+          <a href="../Index.html"
+            ><img
+              src="../img/Barro_y_Fuego_Logo_-_Original_-_5000x5000-removebg-preview.png"
+              alt="icono del logotipo de blog del firu"
+          /></a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4 d-flex text-center">
+          <ul class="navbar-nav justify-content-center fs-6 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="../Index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white" href="contenido1.html"
+                >Contenido</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-white" href="sobreNosotros.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-4 text-center text-light">
+          <h5>Seguinos en nuestras redes</h5>
+          <div class="d-flex justify-content-center">
+            <a href="error404.html" class="text-white facebook" target="blank"
+              ><i
+                class="fab fa-facebook-square fa-2x px-1 align-content-center"
+              ></i
+            ></a>
+            <a href="error404.html" class="text-white twitter" target="blank"
+              ><i class="fab fa-twitter-square fa-2x px-1"></i
+            ></a>
+            <a href="error404.html" class="text-white instagram" target="blank"
+              ><i class="fab fa-instagram fa-2x px-1"></i
+            ></a>
+          </div>
+          <span class="fs-6">&copy;Todos los Derechos Reservados</span>
+        </div>
+      </article>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
